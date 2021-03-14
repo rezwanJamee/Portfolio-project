@@ -22,13 +22,20 @@ const Portfolio = () => {
             <b>GitHub: </b><a className="hyper-link" onClick={() => window.open("https://github.com/RezwanJamee")}>https://github.com/RezwanJamee</a>
             </>
         )
-        PopupboxManager.open({content})
+        PopupboxManager.open({content});
+        PopupboxManager.update({
+            content,
+            config: {
+              titleBar: {
+                text: "Project 1 title",
+              },
+            },
+          });
     }
 
     const popupboxConfigNetflix = {
         titleBar:{
-            enable: true,
-            text: "Netflix clone project."
+            enable: true
         },
         fadeIn: true,
         fadeInSpeed: 500
