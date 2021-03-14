@@ -50,13 +50,20 @@ const Portfolio = () => {
             <b>GitHub: </b><a className="hyper-link" onClick={() => window.open("https://github.com/RezwanJamee")}>https://github.com/RezwanJamee</a>
             </>
         )
-        PopupboxManager.open({content})
+        PopupboxManager.open({content});
+        PopupboxManager.update({
+            content,
+            config: {
+              titleBar: {
+                text: "Project 2 title",
+              },
+            },
+          });
     }
 
     const popupboxConfigCItyGuide = {
         titleBar:{
-            enable: true,
-            text: "City Guide clone project."
+            enable: true
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -71,13 +78,20 @@ const Portfolio = () => {
             <b>GitHub: </b><a className="hyper-link" onClick={() => window.open("https://github.com/RezwanJamee")}>https://github.com/RezwanJamee</a>
             </>
         )
-        PopupboxManager.open({content})
+        PopupboxManager.open({content});
+        PopupboxManager.update({
+            content,
+            config: {
+              titleBar: {
+                text: "Project 3 title",
+              },
+            },
+        });
     }
 
     const popupboxConfigPortfolio = {
         titleBar:{
-            enable: true,
-            text: "Portfolio project."
+            enable: true
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -92,23 +106,28 @@ const Portfolio = () => {
             <b>GitHub: </b><a className="hyper-link" onClick={() => window.open("https://github.com/RezwanJamee")}>https://github.com/RezwanJamee</a>
             </>
         )
-        PopupboxManager.open({content})
+        PopupboxManager.open({content});
+        PopupboxManager.update({
+            content,
+            config: {
+              titleBar: {
+                text: "Project 4 title",
+              },
+            },
+        });
     }
 
     const popupboxConfigTaskManager = {
         titleBar:{
-            enable: true,
-            text: "Task Manager project."
+            enable: true
         },
         fadeIn: true,
         fadeInSpeed: 500
     }
 
 
-
-
     return (
-        <div className="portfolio-wrapper">
+        <div id="portfolio" className="portfolio-wrapper">
             <div className="container">
                 <h1 className="text-uppercase text-center py-5">portfolio</h1>
                 {/* - */}
