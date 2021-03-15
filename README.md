@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Portfolio Project using React and Bootstrap
+This is a personal portfolio project. It is a single paged with functional email messaging and page sharing options.  
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
