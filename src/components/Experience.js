@@ -4,49 +4,48 @@ const Experience = () => {
     return (
         <div id="experience" className="experience">
             <div className="d-flex justify-content-center my-5">
-                <h1>experience</h1>
+                <h1>Timeline</h1>
             </div>
+            <p className="pb-3 text-center">Following is my credentials and experience timeline.</p>
             <div className="container experience-wrapper">
                 {/* - */}
                 <div className="timeline-block timeline-block-right">
                     <div className="marker"></div>
                     <div className="timeline-content">
-                        <h3>2014-2015</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h3>2020-2021</h3>
+                        <p> February - Current</p>
+                        <h4>Bachelor of Information Communication Technology</h4>
+                        <h5>Swinburne University of Technology</h5>
+                        <p>The diploma was a pathway for me to enter the Monash university.</p>
                     </div>
                 </div>
                 {/* - */}
                 <div className="timeline-block timeline-block-left">
                     <div className="marker"></div>
                     <div className="timeline-content">
-                        <h3>2016-2017</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
+                        <h3>2019-2019</h3>
+                        <p>February - November</p>
+                        <h4>Bachelor of Information Technology</h4>
+                        <h5>Monach University</h5>
+                        <p>The diploma was a pathway for me to enter the Monash university.</p>
+                        </div>
                 </div>
                 {/* - */}
                 <div className="timeline-block timeline-block-right">
                     <div className="marker"></div>
                     <div className="timeline-content">
-                        <h3>2018-2019</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
+                        
+                    <h3>2017-2018</h3>
+                        <p>June - September</p>
+                        <h4>Diploma of Engineering(IT)</h4>
+                        <h5>Monach College</h5>
+                        <p>The diploma was a pathway for me to enter the Monash university.</p>
+                        </div>
                 </div>
                 {/* - */}
-                <div className="timeline-block timeline-block-left">
-                    <div className="marker"></div>
-                    <div className="timeline-content">
-                        <h3>2019-2020</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-                {/* - */}
-                <div className="timeline-block timeline-block-right">
-                    <div className="marker"></div>
-                    <div className="timeline-content">
-                        <h3>2020-2021</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
+
+                
+                
             </div>
         </div>
     )

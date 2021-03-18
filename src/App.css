@@ -51,29 +51,38 @@
   --primary-black: #000000;
   --primary-green: green;
   --primary-transparent-black: rgb(0,0,0,0.7);
+
+  /***- New color scheme -***/
+  --darkest: #0B0C10;
+  --mild-dark: #1F2833;
+  --light-dark: #C5C6C7;
+  --light-blue: #66FCF1;
+  --dark-blue: #45A29E;
+
 }
 
 /* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,600&display=swap');
 
 body {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Lora', serif !important;
 }
 
 
 /**********************   NAVBAR  **************************/
-
 nav {
   z-index: 2;
+  background: var(--darkest) !important;
 }
 
 .logo{
-  width: 16.25rem;
+  width: 8.25rem;
 }
 
 /*----  Nav    ----*/
 nav a.nav-link {
   /*font-weight: 500;*/
+  font-family: sans-serif;
   font-size: .8rem;
   letter-spacing: 0.0375rem;
   cursor: pointer;
@@ -87,13 +96,13 @@ nav ul li{
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-white) !important;
-  border-top: 0.1875rem solid var(--primary-dark);
+  border-top: 0.1875rem solid var(--darkest);
 }
 
 .navbar-brand{
   width: 17.25rem;
   padding: 0 !important;
-  height: 6rem !important;
+  height: 2.5rem !important;
 }
 
 @media(max-width: 768px){
@@ -103,17 +112,18 @@ nav ul li{
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a:focus {
-  border-top: 0.1875rem solid var(--primary-orange);
+  border-top: 0.1875rem solid var(--light-blue);
 }
 
 .navbar-nav > li > a:hover{
-  border-top: 0.1875rem solid var(--primary-orange);
+  border-top: 0.1875rem solid var(--light-blue);
+  background: none;
 }
 
 /**********************   HEADER  **************************/
 .header-wraper{
   position: relative;
-  background: url(wall-and-laptop-background.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(wall-and-laptop-background.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -133,14 +143,24 @@ nav ul li{
   z-index: 1;
 }
 
-.main-info h1{
-  color: var(--primary-orange);
+/* ---- TYPED TEXT --------*/
+.main-info h3 {
+  color: #44d3cc;
   text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 0;
+  font-weight: 800;
 }
 
-/* ---- TYPED TEXT --------*/
+.main-info h1{
+  color: var(--light-blue);
+  font-size: 6rem;
+  font-weight: 800;
+  margin-top: 0;
+}
+
 .typed-text {
-  font-size: 2 rem;
+  font-size: 1.8rem;
   color: var(--primary-white);
 }
 @media(max-width: 768px){
@@ -154,19 +174,24 @@ nav ul li{
 
 /* ---- Header button --------*/
 .btn-main-offer {
-  border: 1px solid var(--primary-red);
-  text-transform: uppercase;
+  border: 1px solid var(--dark-blue);
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
-  color: var(--primary-white);
+  color: var(--primary-white) !important;
   margin-top: 2rem;
 }
 
-.btn-main-offer:hover {
+.btn-main-offer:hover, a.nav-link:hover  {
   text-decoration: none;
-  background-color: var(--primary-hover-red);
+  background-color: var(--light-blue);
   color: var(--primary-white);
   transition: .2s ease-in-out;
+}
+
+a.nav-link {
+  color: var(--primary-white);
+  font-size: medium;
+  text-transform: uppercase;
 }
 
 /* ---- Particles style --------*/
@@ -183,7 +208,80 @@ nav ul li{
   }
 }
 
+/* -------------- Social media icons -----------------*/
+.social-container {
+  display: block;
+  margin-top: 3.125rem;
+  position: absolute;
+  bottom: 3.125rem;
+  background: none;
+  padding: 1.563rem 3.125rem;
+}
+a.social{
+  margin: 0 1.8rem;
+  transition: transform 250ms;
+  display: inline-block;
+  color: var(--primary-white);
+}
+
+a.social:hover {
+  transform: translateY(-0.25rem);
+  color: var(--light-blue);
+}
+
+
 /**********************   About me  **************************/
+.about {
+  height: 100vh;
+}
+
+.column1 {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-radius: 0;
+  color: var(--light-blue);
+  outline: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 1rem;
+  padding-left: 0 !important;
+}
+
+.column1 h2, .column2 h2 {
+  margin-bottom: 1rem;
+  color: var(--dark-blue);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: x-large;
+}
+
+.column1 h5{
+  margin-bottom: 0;
+  color: var(--primary-black);
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 600;
+  font-size: large;
+}
+
+.column2 h5{
+  margin-top: 0.85rem;
+  margin-bottom: 0;
+  color: var(--primary-black);
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 600;
+  font-size: large;
+}
+
+.column1 p {
+  margin-bottom: 0.5rem;
+  color: var(--primary-dark-grey);
+  font-size: large;
+}
+
 .photo-wrap {
   display: flex;
   justify-content: center;
@@ -194,19 +292,78 @@ nav ul li{
   width: 16rem;
   border-radius: 50%;
   padding: .3rem;
-  border: 1px solid var(--primary-orange);
+  border: 1px solid var(--darkest);
 }
 .about-heading{
-  color: var(--primary-orange);
+  color: var(--light-blue);
   text-transform: uppercase;
+}
+
+.progressbar {
+  margin-top: 0.55rem;
 }
 
 @media(max-width: 468px){
   .profile-img{
     width: 10rem;
-
   }
 }
+
+/**********************   Skills  **************************/
+.skills-wraper {
+  text-align: left;
+  padding-bottom: 2rem;
+  background: var(--primary-light-grey);
+}
+.skills-wraper h1 {
+  font-weight: 800;
+  color: var(--dark-blue);
+}
+.skills-wraper h4 {
+  font-weight: 600;
+  color: var(--primary-dark-grey);
+}
+
+/* Icons color */ 
+.icon-aws {
+  color: #f5b342;
+}
+.icon-android {
+  color: rgb(35, 226, 29);
+}
+.icon-html {
+  color: #e6a942;
+  margin-right: 0.5rem;
+}
+.icon-css{
+  color: #1E90FF;
+}
+.icon-bootstrap {
+  color: #a762d9;
+  margin-right: 0.5rem;
+}
+.icon-react{
+  color: #1E90FF;
+  margin-right: 0.5rem;
+}
+.icon-js {
+  color: #f5d742;
+  margin-right: 0.5rem;
+}
+.icon-java {
+  color: #fa4c21;
+}
+.icon-nodejs {
+  color: rgb(103, 141, 46);
+}
+.icon-code {
+  color: #1E90FF;
+}
+.icon-db {
+  color: #1E90FF;
+}
+
+
 
 /**********************   Services  **************************/
 .services {
@@ -264,6 +421,31 @@ nav ul li{
   color: var(--primary-white);
 }
 
+/**********************  Availability  Banner  **************************/
+.banner {
+  background: var(--primary-grey);
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.banner-btn {
+  background: var(--darkest);
+  color: var(--primary-grey);
+  border-radius: 0.5rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+.banner-btn:hover {
+  text-decoration: none;
+  color: var(--light-blue);
+}
+.banner h5 {
+  padding-bottom: 1.5rem;
+}
+
+
+
 /**********************   Experience  **************************/
 .experience {
   padding: 0.7rem;
@@ -277,7 +459,7 @@ nav ul li{
 
 .experience h1 {
   text-transform: uppercase;
-  color: var(--primary-orange);
+  color: var(--mild-dark);
 }
 
 .experience-wrapper::before {
@@ -311,7 +493,7 @@ nav ul li{
   height: 1rem;
   border-radius: 50%;
   border: 0.3125rem solid var(--primary-dark);
-  background: var(--primary-orange);
+  background: var(--light-blue);
   margin-top: 0.625rem;
   z-index: 3;
 }
@@ -325,7 +507,7 @@ nav ul li{
 
 .timeline-content h3 {
   margin-top: 00.3125rem;
-  color: var(--primary-red);
+  color: var(--dark-blue);
   font-weight: 900;
 }
 
@@ -358,7 +540,7 @@ nav ul li{
 
 .portfolio-image {
   width: 15rem;
-  border: 1px solid var(--primary-orange);
+  border: 0px solid var(--primary-grey);
   padding: 0 0.5rem;
 }
 
@@ -375,12 +557,12 @@ nav ul li{
   width: 15rem;
   height: 8rem;
   top: 0;
-  border: 1px solid var(--primary-red);
+  border: 1px solid var(--dark-blue);
   cursor: pointer;
 }
 
 .portfolio-wrapper h1 {
-  color: var(--primary-orange);
+  color: var(--darkest);
 }
 
 .portfolio-image-box:hover .overflow {
@@ -392,8 +574,8 @@ nav ul li{
   position: absolute;
   opacity: 1;
   margin-left: -8rem;
-  margin-top: 3.6rem;
-  color: var(--primary-orange);
+  margin-top: 5.6rem;
+  color: var(--dark-blue);
   font-size: 1.5rem;
 }
 
@@ -517,7 +699,7 @@ nav ul li{
 }
 
 .contacts h1 {
-  color: var(--primary-orange);
+  color: var(--light-blue);
   padding: 1.3rem 0;
   text-transform: uppercase;
 }
@@ -537,7 +719,7 @@ nav ul li{
   border: 0;
   border-bottom: 0.125rem solid var(--primary-dark-grey);
   border-radius: 0;
-  color: var(--primary-orange);
+  color: var(--light-blue);
   outline: 0 !important;
   box-shadow: none !important;
   margin-bottom: 1rem;
@@ -550,7 +732,7 @@ nav ul li{
 
 .contacts input:focus, .contacts textarea:focus {
   background: transparent;
-  color: var(--primary-orange);
+  color: var(--light-blue);
   border-bottom: 00.125rem solid var(--primary-dark-grey);
 }
 
@@ -569,7 +751,7 @@ nav ul li{
   top: -0.8rem;
   width: 0;
   height: 0.125rem;
-  background: var(--primary-orange);
+  background: var(--light-blue);
   display: inline-block;
 }
 
@@ -611,9 +793,9 @@ textarea.form-control {
   }
 }
 
-/**********************  Footer  **************************/
+/*****************************  Footer *************************************/
 .footer {
-  background: var(--primary-black);
+  background: var(--darkest);
   color: var(--primary-dark-grey);
   padding: 3rem;
 }
@@ -625,10 +807,31 @@ textarea.form-control {
 
 .footer a:hover {
   text-decoration: none;
-  color: var(--primary-orange);
+  color: var(--light-blue);
   cursor: pointer;
 }
 
 .footer p {
   margin-bottom: 0;
+  cursor: default;
 }
+
+.footer h5 {
+  color: var(--primary-grey);
+  font-weight: 600;
+  cursor: default;
+}
+
+/*  --------- Footer socical media icons ------------------ */
+a.social-footer{
+  margin: 0.4rem 0.8rem 0;
+  transition: transform 250ms;
+  display: inline-block;
+  color: var(--primary-grey);
+}
+
+a.social-footer:hover {
+  transform: translateY(-0.25rem);
+  color: var(--light-blue);
+}
+

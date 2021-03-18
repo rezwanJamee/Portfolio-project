@@ -1,8 +1,9 @@
 import React from 'react';
-import netflix from '../images/netflix.png';
-import cityGuide from '../images/city-guide-app.png';
+import tempPro from '../images/project-commingsoon.png';
 import portfolio from '../images/portfolio.png';
-import taskManager from '../images/task-manager.png';
+//Unused images
+//import netflix from '../images/netflix.png';
+//import cityGuide from '../images/city-guide-app.png';import taskManager from '../images/task-manager.png';
 //Font Awesome
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -17,7 +18,7 @@ const Portfolio = () => {
     const openPopupboxNetflix = () => {
         const content = (
             <>
-            <img className="portfolio-image-poppbox" src={netflix} alt="Netflix clone project..." />
+            <img className="portfolio-image-poppbox" src={tempPro} alt="Netflix clone project..." />
             <p>Pop up screen detail here for netflix.</p>
             <b>GitHub: </b><a className="hyper-link" onClick={() => window.open("https://github.com/RezwanJamee")}>https://github.com/RezwanJamee</a>
             </>
@@ -45,7 +46,7 @@ const Portfolio = () => {
     const openPopupboxCityGuide = () => {
         const content = (
             <>
-            <img className="portfolio-image-poppbox" src={cityGuide} alt="City Guide clone project..." />
+            <img className="portfolio-image-poppbox" src={tempPro} alt="City Guide clone project..." />
             <p>Pop up screen detail here for cityGuide.</p>
             <b>GitHub: </b><a className="hyper-link" onClick={() => window.open("https://github.com/RezwanJamee")}>https://github.com/RezwanJamee</a>
             </>
@@ -101,7 +102,7 @@ const Portfolio = () => {
     const openPopupboxTaskManager = () => {
         const content = (
             <>
-            <img className="portfolio-image-poppbox" src={taskManager} alt="Task manager project..." />
+            <img className="portfolio-image-poppbox" src={tempPro} alt="Task manager project..." />
             <p>Pop up screen detail here for Task manager.</p>
             <b>GitHub: </b><a className="hyper-link" onClick={() => window.open("https://github.com/RezwanJamee")}>https://github.com/RezwanJamee</a>
             </>
@@ -133,13 +134,13 @@ const Portfolio = () => {
                 {/* - */}
                 <div className="image-box-wrapper row justify-content center">
                     <div className="portfolio-image-box" onClick={openPopupboxNetflix}>
-                        <img className="portfolio-image" src={netflix} alt="Netflix Clone Project" />
+                        <img className="portfolio-image" src={tempPro} alt="Netflix Clone Project" />
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                     {/* - */}
                     <div className="portfolio-image-box" onClick={openPopupboxCityGuide}>
-                        <img className="portfolio-image" src={cityGuide} alt="Netflix Clone Project" />
+                        <img className="portfolio-image" src={tempPro} alt="Netflix Clone Project" />
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
@@ -151,7 +152,7 @@ const Portfolio = () => {
                     </div>
                     {/* - */}
                     <div className="portfolio-image-box" onClick={openPopupboxTaskManager}>
-                        <img className="portfolio-image" src={taskManager} alt="Netflix Clone Project" />
+                        <img className="portfolio-image" src={tempPro} alt="Netflix Clone Project" />
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
