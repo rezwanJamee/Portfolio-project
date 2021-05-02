@@ -4,6 +4,9 @@ This is a personal portfolio project. It is a single paged with functional email
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://rifats-portfolio.netlify.app/)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
